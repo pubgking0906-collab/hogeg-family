@@ -35,6 +35,30 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <!-- 🔒 Password Protection -->
+  <script>
+    (function() {
+      const CORRECT_HASH = '525920eb75f6453733fa289a0a49d13e72e82a1d52e5fa62866034a3521d6d6a';
+      const stored = localStorage.getItem('hogeg_auth');
+      
+      if (!stored) {
+        window.location.href = 'login.html';
+        return;
+      }
+      
+      try {
+        const { hash, expiry } = JSON.parse(stored);
+        if (Date.now() >= expiry || hash !== CORRECT_HASH) {
+          localStorage.removeItem('hogeg_auth');
+          window.location.href = 'login.html';
+        }
+      } catch (e) {
+        localStorage.removeItem('hogeg_auth');
+        window.location.href = 'login.html';
+      }
+    })();
+  </script>
+
   <!-- Navigation -->
   <nav class="nav" id="nav">
     <div class="nav-inner">
