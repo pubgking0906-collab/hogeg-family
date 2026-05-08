@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="משפחת חוגג — הסיפורים, הרגעים והזיכרונות שלנו. בית דיגיטלי משפחתי." />
+  <meta name="theme-color" content="#FAF6F0" />
+  <title>משפחת חוגג · הסיפורים, הרגעים והזיכרונות שלנו</title>
+
+  <link rel="icon" type="image/png" href="assets/logo-mark.png" />
+  <link rel="apple-touch-icon" href="assets/logo-mark.png" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="משפחת חוגג" />
+  <meta property="og:description" content="הסיפורים, הרגעים והזיכרונות שלנו" />
+  <meta property="og:image" content="assets/family-hero.jpg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="he_IL" />
+
+  <!-- Fonts: Frank Ruhl Libre (elegant Hebrew serif) + Assistant (clean Hebrew sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500;700;900&family=Assistant:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <ul class="nav-links">
+        <li><a href="#story">הסיפור שלנו</a></li>
+        <li><a href="#moments">רגעים</a></li>
+        <li><a href="#people">האנשים שלנו</a></li>
+        <li><a href="#timeline">ציר הזמן</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="פתח תפריט" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero" id="hero">
+    <div class="hero-image">
+      <picture>
+        <source media="(max-width: 768px)" srcset="assets/family-hero-mobile.jpg" />
+        <img src="assets/family-hero.jpg" alt="משפחת חוגג" />
+      </picture>
+      <div class="hero-overlay"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-inner">
+        <div class="hero-kicker">ברוכים הבאים</div>
+        <h1 class="hero-title">משפחת חוגג</h1>
+        <p class="hero-tagline">הסיפורים, הרגעים והזיכרונות שלנו</p>
+        <p class="hero-intro">
+          ברוכים הבאים למקום הקטן שלנו — שבו נאספים רגעים, סיפורים וזיכרונות משפחתיים
+          שנרצה לשמור, לשתף ולחזור אליהם גם בעוד שנים.
+        </p>
+        <a href="#story" class="hero-cta">
+          <span>לגלות את הסיפור שלנו</span>
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Story -->
+  <section class="section story" id="story">
+    <div class="container narrow">
+      <div class="section-header center">
+        <div class="eyebrow">פרק ראשון</div>
+        <h2 class="section-title">הסיפור שלנו</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="prose">
+        <p>
+          משפחת חוגג היא עולם של רגעים קטנים וגדולים — סיפורים שנוצרים בבית, בדרכים,
+          בחגים, בטיולים ובימים הכי רגילים. האתר הזה נולד כדי לתת לכל אלה מקום:
+          לשמור זיכרונות, לחזור אליהם, ולשתף אותם עם האנשים הקרובים אלינו.
+        </p>
+        <p>
+          כאן נאסוף בהדרגה תמונות, סיפורים, אבני דרך ורגעים משפחתיים — לא כאלבום
+          סגור במדף, אלא כמקום חי שמתעדכן וגדל יחד איתנו.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Moments -->
+  <section class="section moments" id="moments">
+    <div class="container">
+      <div class="section-header center">
+        <div class="eyebrow">פרק שני</div>
+        <h2 class="section-title">רגעים שנשארים</h2>
+        <div class="divider"></div>
+        <p class="section-lede">
+          יש רגעים שעוברים מהר, אבל נשארים איתנו הרבה אחרי.
+          כאן נאסוף את החוויות, התמונות והסיפורים הקטנים שמרכיבים את הסיפור שלנו.
+        </p>
+      </div>
+      <div class="moments-grid">
+        <article class="moment-card moment-card--bg" style="--bg:url('assets/moments/trips.jpg'); background-position: center 65%;">
+          <div class="moment-card-overlay"></div>
+          <div class="moment-icon">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 7-8 13-8 13s-8-6-8-13a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <h3>טיולים וחוויות</h3>
+          <p>מקומות שראינו, דרכים שעברנו ורגעים שפתאום הפכו לזיכרון.</p>
+        </article>
+        <article class="moment-card moment-card--bg" style="--bg:url('assets/moments/holidays.jpg'); background-position: center 30%;">
+          <div class="moment-card-overlay"></div>
+          <div class="moment-icon">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </div>
+          <h3>חגים ואירועים</h3>
+          <p>מפגשים, שמחות, מסורות ורגעים שחוזרים בכל שנה בצורה חדשה.</p>
+        </article>
+        <article class="moment-card moment-card--bg" style="--bg:url('assets/moments/birthdays.jpg'); background-position: center 45%;">
+          <div class="moment-card-overlay"></div>
+          <div class="moment-icon">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 4H4a2 2 0 0 0-2 2v14l4-4h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2z"/><line x1="8" y1="10" x2="16" y2="10"/><line x1="8" y1="14" x2="12" y2="14"/></svg>
+          </div>
+          <h3>ימי הולדת ואבני דרך</h3>
+          <p>התחלות חדשות, גדילה, התרגשות וסימנים קטנים של זמן שעובר.</p>
+        </article>
+        <article class="moment-card moment-card--bg" style="--bg:url('assets/moments/home.jpg'); background-position: center 50%;">
+          <div class="moment-card-overlay"></div>
+          <div class="moment-icon">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <h3>רגעים של בית</h3>
+          <p>הימים הפשוטים, הצחוקים, השיחות והרגעים שהופכים את הבית למה שהוא.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- People -->
+  <section class="section people" id="people">
+    <div class="container">
+      <div class="section-header center">
+        <div class="eyebrow">פרק שלישי</div>
+        <h2 class="section-title">האנשים שלנו</h2>
+        <div class="divider"></div>
+        <p class="section-lede">
+          כל משפחה היא הסיפורים של האנשים שמרכיבים אותה. אלה האנשים שלנו —
+          כל אחד עם האור, האופי והדרך שלו.
+        </p>
+      </div>
+      <div class="people-grid">
+        <article class="person-card">
+          <div class="person-photo"><img src="assets/people/oded.jpg" alt="עודד" loading="lazy" /></div>
+          <h3>עודד</h3>
+          <p class="person-role">אבא</p>
+          <p>יוצר רגעים, סיפורים וחלומות למשפחה.</p>
+        </article>
+        <article class="person-card">
+          <div class="person-photo"><img src="assets/people/hadar.jpg" alt="הדר" loading="lazy" /></div>
+          <h3>הדר</h3>
+          <p class="person-role">אמא</p>
+          <p>הלב החם שמחזיק את הבית והמשפחה יחד.</p>
+        </article>
+        <article class="person-card">
+          <div class="person-photo"><img src="assets/people/sean.jpg" alt="שון" loading="lazy" /></div>
+          <h3>שון</h3>
+          <p class="person-role">בן</p>
+          <p>עולם של סקרנות, אנרגיה ודמיון.</p>
+        </article>
+        <article class="person-card">
+          <div class="person-photo"><img src="assets/people/joy.jpg" alt="ג׳וי" loading="lazy" /></div>
+          <h3>ג׳וי</h3>
+          <p class="person-role">בת</p>
+          <p>שמחה, אור ורגעים קטנים שהופכים לגדולים.</p>
+        </article>
+        <article class="person-card">
+          <div class="person-photo"><img src="assets/people/naya.jpg" alt="נאיה" loading="lazy" /></div>
+          <h3>נאיה</h3>
+          <p class="person-role">בת</p>
+          <p>קסם, רכות וסיפור שהולך ונכתב כל יום.</p>
+        </article>
+        <article class="person-card">
+          <div class="person-photo"><img src="assets/people/lai-eli.jpg" alt="לאי אלי" loading="lazy" /></div>
+          <h3>לאי אלי</h3>
+          <p class="person-role">בן</p>
+          <p>נוכחות קטנה־גדולה שמוסיפה עוד אור למשפחה.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Timeline -->
+  <section class="section timeline" id="timeline">
+    <div class="container narrow">
+      <div class="section-header center">
+        <div class="eyebrow">פרק רביעי</div>
+        <h2 class="section-title">ציר הזמן המשפחתי</h2>
+        <div class="divider"></div>
+        <p class="section-lede">
+          הסיפור שלנו נבנה מרגעים — חלקם גדולים וברורים, חלקם קטנים ושקטים.
+          יחד הם יוצרים את הדרך של משפחת חוגג.
+        </p>
+      </div>
+      <div class="timeline-list">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>ההתחלה</h3>
+            <p>המקום שבו התחיל הסיפור המשפחתי שלנו.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>המשפחה גדלה</h3>
+            <p>רגעים שבהם נוספו פרקים חדשים, שמות חדשים וזיכרונות חדשים.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>חוויות בדרך</h3>
+            <p>טיולים, חגים, ימים מיוחדים ורגעים שנשארו איתנו.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>היום ומחר</h3>
+            <p>הסיפור ממשיך להיכתב — בכל יום, בכל רגע, בכל זיכרון חדש.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Future -->
+  <section class="section future">
+    <div class="container narrow">
+      <div class="future-card">
+        <div class="section-header center">
+          <div class="eyebrow">המשך הדרך</div>
+          <h2 class="section-title">מבט קדימה</h2>
+          <div class="divider"></div>
+        </div>
+        <p class="future-text">
+          האתר הזה הוא התחלה של מקום משפחתי שילך ויגדל עם הזמן.
+          בהמשך נוסיף עוד תמונות, סיפורים, רגעים אישיים ואולי גם עמודים נפרדים
+          לכל אחד מבני המשפחה — כדי שכל סיפור יקבל את המקום שלו.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <img src="assets/logo-dark-bg.png" alt="משפחת חוגג" class="footer-logo" />
+        <p class="footer-tagline">הסיפורים, הרגעים והזיכרונות שלנו</p>
+        <p class="footer-note">נכתב, נאסף ונשמר באהבה.</p>
+        <p class="footer-copy" dir="ltr">&copy; <span id="year">2026</span> Hogeg Family <span class="footer-sep">|</span> Created by <a href="https://joni.ai" target="_blank" rel="noopener">Joni AI</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
